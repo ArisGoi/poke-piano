@@ -23,7 +23,7 @@ function playSound(key) {
 }
 
 pianoKeys.forEach( pianoKey => {
-    pianoKey.addEventListener('click', function() {
+    pianoKey.addEventListener('click', function() {
         const key = pianoKey.id;
         playSound(key);
     });
