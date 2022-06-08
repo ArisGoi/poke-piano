@@ -72,3 +72,9 @@ body{
 .key-black:active {
     background: #000000;
 }
+
+@media (orientation: portrait){
+    .piano{
+        transform: rotate(-90deg);
+    }
+}
