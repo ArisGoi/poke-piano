@@ -1,3 +1,74 @@
-html{
-    background-color: blueviolet;
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMONS */
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(#0f0f77 5%, #3535EC);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* piano-top */
+.piano-panel{
+    height: 80px;
+    min-width: 300px;
+    padding: 20px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #edb51b;
+    background-image: url('images/panel-reflex.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.piano-panel img{
+    width: 160px;
+}
+
+/* piano-keys */
+.piano-keys{
+    height: 180px;
+    display: flex;
+}
+
+.key-white, .key-black{
+    border-radius: 0 0 8px 8px;
+}
+
+.key-white{
+    height: 100%;
+    width: 64px;
+    background-color: #fff;
+    border-right: 2px solid #000000;
+    border-left: 2px solid #000000;
+    border-bottom: 6px solid #8c8c8c;
+}
+
+.key-black{
+    height: 60%;
+    width: 44px;
+    margin: 0 -22px;
+    z-index: 2;
+    background: linear-gradient(#737373 10%, #0d0d0d);
+    border: 6px solid #000000;
+    border-top: none;
+}
+
+.key-white:active {
+    background-color: #dddddd;
+}
+
+.key-black:active {
+    background: #000000;
 }
